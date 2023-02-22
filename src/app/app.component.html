@@ -11,8 +11,8 @@
 
 <div class="container" *ngIf="weatherData">
   <div class="upperdata">
-    <img src="../assets/hot.jpg" *ngIf="weatherData.current.temp_c > 15" />
-    <img src="../assets/cold.jpg" *ngIf="weatherData.current.temp_c <= 15" />
+    <img src="./assets/hot.jpg" *ngIf="weatherData.current.temp_c > 15" />
+    <img src="./assets/cold.jpg" *ngIf="weatherData.current.temp_c <= 15" />
     <div class="weatherdata">
       <div class="location">{{ weatherData.location.name }}</div>
       <div class="temperature">
@@ -25,7 +25,7 @@
     <div class="morecontain">
       <div class="infoblock">
         <div class="infolabel">
-          <img src="../assets/min.png" />
+          <img src="./assets/min.png" />
           <span>℉</span>
         </div>
         <div class="infovalue">{{ weatherData.current.temp_f }}℉</div>
@@ -33,7 +33,7 @@
 
       <div class="infoblock">
         <div class="infolabel">
-          <img src="../assets/max.png" />
+          <img src="./assets/max.png" />
           <span>℃</span>
         </div>
         <div class="infovalue">{{ weatherData.current.temp_c }}℃</div>
@@ -41,7 +41,7 @@
 
       <div class="infoblock">
         <div class="infolabel">
-          <img src="../assets/humid.png" />
+          <img src="./assets/humid.png" />
           <span>humidity</span>
         </div>
         <div class="infovalue">{{ weatherData.current.humidity }}%</div>
@@ -49,7 +49,7 @@
 
       <div class="infoblock">
         <div class="infolabel">
-          <img src="../assets/wind.png" />
+          <img src="./assets/wind.png" />
           <span>wind</span>
         </div>
         <div class="infovalue">{{ weatherData.current.wind_kph }}km/h</div>
@@ -60,8 +60,8 @@
 <!--
 <div class="container">
   <div class="upperdata">
-    <img src="../assets/hot.jpg" ngif="14 > 15" />
-    <img src="../assets/cold.jpg" ngif="14 <= 15" />
+    <img src="./assets/hot.jpg" ngif="14 > 15" />
+    <img src="./assets/cold.jpg" ngif="14 <= 15" />
     <div class="weatherdata">
       <div class="location">Mumbai</div>
       <div class="temperature">{{ 14.4 | number : "1.0-0" }}℃</div>
@@ -72,7 +72,7 @@
     <div class="morecontain">
       <div class="infoblock">
         <div class="infolabel">
-          <img src="../assets/min.png" />
+          <img src="./assets/min.png" />
           <span>min</span>
         </div>
         <div class="infovalue">10℃</div>
@@ -80,7 +80,7 @@
 
       <div class="infoblock">
         <div class="infolabel">
-          <img src="../assets/max.png" />
+          <img src="./assets/max.png" />
           <span>max</span>
         </div>
         <div class="infovalue">20℃</div>
@@ -88,7 +88,7 @@
 
       <div class="infoblock">
         <div class="infolabel">
-          <img src="../assets/humid.png" />
+          <img src="./assets/humid.png" />
           <span>humidity</span>
         </div>
         <div class="infovalue">77%</div>
@@ -96,7 +96,7 @@
 
       <div class="infoblock">
         <div class="infolabel">
-          <img src="../assets/wind.png" />
+          <img src="./assets/wind.png" />
           <span>wind</span>
         </div>
         <div class="infovalue">11km/h</div>
